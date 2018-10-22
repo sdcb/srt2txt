@@ -1,0 +1,11 @@
+D:\code\srt-2-txt\bin\Debug\netcoreapp2.1\srt-2-txt.deps.json
+D:\code\srt-2-txt\bin\Debug\netcoreapp2.1\srt-2-txt.runtimeconfig.json
+D:\code\srt-2-txt\bin\Debug\netcoreapp2.1\srt-2-txt.runtimeconfig.dev.json
+D:\code\srt-2-txt\bin\Debug\netcoreapp2.1\srt-2-txt.dll
+D:\code\srt-2-txt\bin\Debug\netcoreapp2.1\srt-2-txt.pdb
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.csproj.CoreCompileInputs.cache
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.AssemblyInfoInputs.cache
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.AssemblyInfo.cs
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.dll
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.pdb
+D:\code\srt-2-txt\obj\Debug\netcoreapp2.1\srt-2-txt.csprojResolveAssemblyReference.cache
