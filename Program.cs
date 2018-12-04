@@ -9,35 +9,12 @@ namespace srt_2_txt
         static void Main(string[] args)
         {
             var lines = File.ReadAllLines("The.Middle.S01E01.HDTV.XviD-2HD.srt");
-            StringBuilder result = new StringBuilder();
-            for(int i = 0; i < lines.Length; i++)
-            {
-                var line = lines[i];
-                if(string.IsNullOrWhiteSpace(line))
-                {
-                    continue;
-                }
-                var firstChar = line[0];
-                var isNumber = System.Text.RegularExpressions.Regex.IsMatch(firstChar.ToString(), @"[\d]");
-                if(isNumber == false)
-                {
-                    line = line.Replace("<i>", "");
-                    line = line.Replace("</i>", "");
-                    if(line.EndsWith('.') || line.EndsWith('?'))
-                    {
-                        line = line + "  ";
-                    }
-                    else
-                    {
-                        // stence in 2 line
-                        line = line + " ";
-                    }
-
-                    result.Append(line);
-                }
-            }
-            File.WriteAllText("The.Middle.S01E01.HDTV.XviD-2HD.srt.txt", result.ToString());
-            Console.Write(result.ToString());
+            var result = String.Join(" ", lines
+                .Where(x => x.Length > 0 && !Char.IsDigit(x[0]))
+                .Select(x => x.Replace("<i>", "").Replace("</i>", ""))
+                .Select(x => Regex.Replace(x, @"(.*)(\.|\?)$", "$1")));
+            File.WriteAllText("The.Middle.S01E01.HDTV.XviD-2HD.srt.txt", result);
+            Console.Write(result);
         }
     }
 }
