@@ -23,7 +23,7 @@ namespace srt_2_txt
                 {
                     line = line.Replace("<i>", "");
                     line = line.Replace("</i>", "");
-                    if(line.EndsWith('.') || line.EndsWith('?'))
+                    if(line.EndsWith(".") || line.EndsWith("?"))
                     {
                         line = line + "  ";
                     }
